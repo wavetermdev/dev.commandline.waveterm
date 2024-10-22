@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Wave
+Exec=waveterm --enable-features UseOzonePlatform --ozone-platform-hint auto %U
+Terminal=false
+Type=Application
+Icon=waveterm
+StartupWMClass=Wave
+Comment=Open-Source AI-Native Terminal Built for Seamless Workflows
+Keywords=developer;terminal;emulator;
+category=Development;Utility;
+Categories=TerminalEmulator;

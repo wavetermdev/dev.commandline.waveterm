@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+  <id>dev.commandline.waveterm</id>
+  <metadata_license>MIT</metadata_license>
+  <project_license>https://github.com/wavetermdev/waveterm?tab=Apache-2.0-1-ov-file#readme</project_license>
+  <name>Wave</name>
+  <developer_name>Command Line Inc</developer_name>
+  <url type="homepage">https://waveterm.dev</url>
+  <url type="help">https://github.com/flathub/dev.commandline.waveterm?tab=readme-ov-file#usage</url>
+  <summary>Code editing. Redefined.</summary>
+  <description>
+    <p>An open-source, cross-platform terminal for seamless workflows</p>
+  </description>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://github.com/wavetermdev/waveterm/raw/main/assets/wave-screenshot.png</image>
+      <caption>Showcase of different widget types in Wave</caption>
+    </screenshot>
+  </screenshots>
+  <launchable type="desktop-id">dev.commandline.waveterm.desktop</launchable>
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-info">moderate</content_attribute>
+  </content_rating>
+  <releases>
+  </releases>
+</component>
