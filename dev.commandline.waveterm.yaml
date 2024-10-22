@@ -71,7 +71,6 @@ modules:
         only-arches: [x86_64]
         url: https://dl.waveterm.dev/releases-w2/waveterm-linux-amd64-0.8.12.deb
         sha512: qLZI7/VoAP2T0gOkTr+LrSlvLabHiMCguYJQZWaI9nwMxuVHhHOHOfDtbewXsVQdSdif/bCFaX3WNB5xCJs8Pw==
-        size: 106061756
         # x-checker-data:
         #   type: json
         #   url: https://api.github.com/repos/wavetermdev/waveterm/releases/latest
@@ -85,7 +84,6 @@ modules:
         only-arches: [aarch64]
         url: https://dl.waveterm.dev/releases-w2/waveterm-linux-amd64-0.8.12.deb
         sha512: ZVMYgjxu48akGB5NYj4qlatsR/z+42EI3PdTphtadl5IgqhwcLcGNpA6UA3ef6GN00H9RdpFBHfd9RBJ9D0K4g==
-        size: 101433412
         # x-checker-data:
         #   type: json
         #   url: https://api.github.com/repos/microsoft/vscode/releases/latest
