@@ -11,7 +11,8 @@ finish-args:
   - --require-version=0.10.3
   - --share=network
   - --share=ipc
-  - --socket=x11
+  - --socket=wayland
+  - --socket=fallback-x11
   - --socket=pulseaudio
   - --socket=ssh-auth
   - --device=all
@@ -61,11 +62,12 @@ modules:
           - tar xf data.tar.xz
           - mv usr/share/Wave waveterm
           - rm -r waveterm.deb control.tar.* data.tar.xz debian-binary usr
+      - type: file
         path: dev.commandline.waveterm.metainfo.xml
       - type: file
         path: dev.commandline.waveterm.desktop
-      - type: extra-data
-        filename: waveterm.deb
+      - type: file
+        dest-name: waveterm.deb
         only-arches: [x86_64]
         url: https://dl.waveterm.dev/releases-w2/waveterm-linux-amd64-0.8.12.deb
         sha512: qLZI7/VoAP2T0gOkTr+LrSlvLabHiMCguYJQZWaI9nwMxuVHhHOHOfDtbewXsVQdSdif/bCFaX3WNB5xCJs8Pw==
@@ -78,8 +80,8 @@ modules:
         #   url-query: '"https://dl.waveterm.dev/releases-w2/waveterm-linux-amd64-" + $version + "/linux-deb-x64/stable"'
         #   is-main-source: true
 
-      - type: extra-data
-        filename: waveterm.deb
+      - type: file
+        dest-name: waveterm.deb
         only-arches: [aarch64]
         url: https://dl.waveterm.dev/releases-w2/waveterm-linux-amd64-0.8.12.deb
         sha512: ZVMYgjxu48akGB5NYj4qlatsR/z+42EI3PdTphtadl5IgqhwcLcGNpA6UA3ef6GN00H9RdpFBHfd9RBJ9D0K4g==
